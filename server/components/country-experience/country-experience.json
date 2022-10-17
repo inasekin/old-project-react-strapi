@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_country_experience_country_experiences",
+  "info": {
+    "name": "country_experience",
+    "icon": "crow",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "experience": {
+      "type": "text"
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "country": {
+      "type": "string"
+    }
+  }
+}

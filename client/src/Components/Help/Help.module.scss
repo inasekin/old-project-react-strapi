@@ -1,0 +1,152 @@
+@import "../../styles/rtc";
+
+.wrapperDark {
+  background-color: #1E2A46;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+#containerDark {
+  margin: 0;
+  background-color: #1E2A46;
+}
+
+.buttonDark {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 0.2rem solid #fff;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #ffff;
+  padding: 2rem;
+  width: 20rem;
+  height: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+  transition: transform 400ms;
+  cursor: pointer;
+}
+
+.buttonDark:hover {
+  transform: scale(1.1);
+}
+
+.buttonInvisible {
+  width: 15rem;
+  height: 15rem;
+  visibility: hidden;
+}
+
+.headerDark {
+  font-weight: 600;
+  font-size: 4.5rem;
+  color: #ffff;
+  margin: 0 0 3rem 0.8rem;
+  width: 80rem;
+}
+
+#containerLight {
+  background-color: transparent;
+  margin: 5rem 0 5rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttonLight {
+  background-color: #61A0FA;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #ffff;
+  padding: 2rem;
+  margin: 0.8rem;
+  transition: transform 400ms;
+  cursor: pointer;
+
+  min-width: 20rem;
+  min-height: 20rem;
+  max-height: 20rem;
+  max-width: 20rem;
+}
+
+.buttonText {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 110.19%;
+}
+.buttonLight .buttonText {
+  font-size: 2rem;
+}
+.buttonLight:hover {
+  transform: scale(1.2);
+}
+
+.headerLight {
+  font-weight: 600;
+  font-size: 6.4rem;
+  line-height: 110.19%;
+  color: black;
+  margin: 0 0 3rem 0;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .buttonLight, .buttonDark {
+    min-width: 40rem;
+    min-height: 40rem;
+    max-height: 40rem;
+    max-width: 40rem;
+  }
+
+  .buttonText {
+    font-size: 5rem;
+  }
+
+  .headerLight, .headerDark {
+    font-size: 10rem;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+  .buttonLight .buttonText {
+    font-size: 14px;
+  }
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

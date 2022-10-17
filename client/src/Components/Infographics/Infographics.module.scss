@@ -1,0 +1,161 @@
+@import "../../styles/rtc";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background-color: #1E2A46;
+}
+
+.container {
+  margin: 5rem 0 2rem 0;
+  width: 80rem;
+  height: 40rem;
+}
+
+.big {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 46rem;
+}
+
+.bigTwo {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 30rem;
+  margin: 20rem 0 0 55rem;
+}
+
+.bigText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ffff;
+}
+
+.bigTextEmph {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4.3rem;
+  font-weight: 700;
+}
+
+.bigTextTwo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffff;
+}
+
+.bigTextEmphTwo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.left {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #ffff;
+  width: 20rem;
+  margin: 15rem 0 0 0;
+}
+
+.pieChart {
+  position: absolute;
+  margin: 15rem 0 0 25rem;
+}
+
+.right {
+  position: absolute;
+  margin: 1rem 0 0 55rem;
+  width: 20rem;
+}
+
+.number {
+  font-size: 3rem;
+  width: 40rem;
+}
+
+.pre {
+
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+}
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .container {
+    width: 100%;
+    height: initial;
+    margin-top: 30rem;
+  }
+
+  .number {
+    font-size: 10rem;
+    width: 100%;
+  }
+
+  .big {
+    position: relative;
+    width: 100%;
+    font-size: 10rem;
+  }
+
+  .pieChart {
+    position: relative;
+    width: 100% !important;
+    padding-bottom: 100%;
+
+    margin: 0;
+  }
+
+  .left, .right {
+    margin: 10rem 0;
+    position: relative;
+    width: 100%;
+    font-size: 10rem;
+  }
+
+  .bigText, .bigTextEmph {
+    font-size: 16rem;
+  }
+
+  .bigText {
+    margin-bottom: 15rem;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

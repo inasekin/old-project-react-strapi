@@ -1,0 +1,58 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_project_pages",
+  "info": {
+    "name": "about-project-page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "scheme": {
+      "type": "json"
+    },
+    "project_logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "about_text": {
+      "type": "text"
+    },
+    "video_text": {
+      "type": "text"
+    },
+    "videoId": {
+      "type": "string"
+    },
+    "we_propose_header": {
+      "type": "string"
+    },
+    "we_propose_text": {
+      "type": "text"
+    },
+    "video_background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

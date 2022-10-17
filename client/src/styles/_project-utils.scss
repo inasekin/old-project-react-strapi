@@ -1,0 +1,108 @@
+.mb-7 {
+  margin-bottom: 7rem;
+}
+
+.pl-3 {
+  padding-left: 3rem;
+}
+
+.pl-5 {
+  padding-left: 5rem;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  overflow: initial;
+}
+
+.link {
+  &:hover, &:hover a {
+    color: #1e70bf;
+  }
+}
+
+a {
+  color: #3e91e7;
+}
+
+a:hover {
+  color: #1e70bf;
+}
+
+.CookieConsent {
+  font-size: 5rem;
+  flex-direction: column;
+
+  > div:first-child {
+    flex: 1 0 0 !important;
+    font-size: 3rem;
+  }
+
+  button {
+    display: block;
+    padding: 1rem 2rem !important;
+    font-size: 4rem;
+  }
+}
+
+.swiper-container {
+  overflow: initial !important;
+}
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .swiper-wrapper {
+    min-height: 220rem;
+  }
+
+  //.swiper-slide {
+  //  width: 80% !important;
+  //}
+
+  .CookieConsent {
+    font-size: 5rem;
+    flex-direction: column;
+
+    > div:first-child {
+      font-size: 7rem;
+    }
+
+    button {
+      font-size: 8rem;
+    }
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+  .container, .container-fluid {
+    padding: 0 17px;
+  }
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

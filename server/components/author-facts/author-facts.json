@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_author_facts_author_facts",
+  "info": {
+    "name": "author_facts",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "string"
+    },
+    "fact": {
+      "type": "string"
+    }
+  }
+}

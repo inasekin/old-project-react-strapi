@@ -1,0 +1,207 @@
+@import "../../styles/rtc";
+
+.darkWrapper {
+  background-color: #1E2A46;
+  clip-path: polygon(50% 0%, 100% 7%, 100% 43%, 100% 100%, 68% 100%, 30% 100%, 0 100%, 0 43%, 0 7%);
+}
+
+.transparentWrapper {
+  background-color: transparent;
+}
+
+.header {
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+
+#whiteText {
+  color: #ffff;
+}
+
+#blackText {
+  color: black;
+}
+
+#link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #61A0FA;
+  transition: transform 400ms;
+}
+
+#link:hover {
+  transform: scale(1.2);
+  color: #0c2241;
+}
+
+.tag {
+  padding: 3px 2rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #61A0FA;
+  background-color: transparent;
+  border-radius: 2rem;
+  border: 0.2rem solid #61A0FA;
+}
+
+.tagWrapper {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.tagDark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #61A0FA;
+  border-radius: 2rem;
+  border: 0.2rem solid #61A0FA;
+  background-color: transparent;
+  padding: 0 1rem;
+  margin: 1rem 0 1rem 0;
+  min-height: 2.5rem;
+  text-align: center;
+}
+
+#tagShort {
+  width: 10rem;
+}
+
+#tagLong {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.date {
+  color: #969696;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.newsImage {
+  height: initial;
+  width: 100%;
+  display: flex;
+
+  & > img {
+    width: 100%;
+    clip-path: circle(45% at center);
+    height: 28rem;
+    object-fit: cover;
+  }
+}
+
+.card {
+  background-color: transparent;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+
+.upperRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 5rem;
+}
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .header {
+    font-size: 10rem;
+  }
+
+  .card {
+    flex-direction: row;
+    align-items: flex-start;
+
+    margin-bottom: 10rem;
+  }
+
+  .newsImage {
+    margin-right: 6rem;
+  }
+
+  .text {
+    width: initial;
+    font-size: 4.5rem;
+  }
+
+  .tag {
+    font-size: 5rem;
+  }
+
+  .date {
+    font-size: 4rem;
+  }
+
+  #tagLong {
+    margin-top: 3rem;
+    font-size: 5rem;
+    width: auto;
+    display: inline-block;
+    border-radius: 15rem;
+  }
+
+  #link {
+    font-size: 6.5rem;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+  .newsImage {
+    margin: 0 8rem 3rem 0;
+    height: 50rem;
+    width: 44rem;
+    display: flex;
+
+    & > img {
+      width: 50rem;
+      clip-path: circle(60px at center);
+      height: unset;
+    }
+  }
+  .text {
+    font-size: 14px;
+  }
+  .upperRow {
+    margin-top: 30px;
+  }
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

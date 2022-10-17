@@ -1,0 +1,205 @@
+@import "../../styles/rtc";
+
+
+.wrapper {
+  background-color: #1E2A46;
+}
+
+.container {
+  cursor: default;
+  background-color: #1E2A46;
+}
+
+.detailedContainer {
+  min-height: 15rem;
+  background-color: #FBFAFA;
+  border-radius: 0 3rem 3rem 3rem;
+  padding: 4.8rem 5.6rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6.4rem;
+  font-weight: 600;
+  margin-bottom: 5rem;
+  color: #ffff;
+}
+
+.avatarContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  font-size: 2rem;
+  font-weight: 900;
+  border-radius: 50%;
+  width: 16rem;
+  height: 16rem;
+  margin: 0.5rem;
+  transition: transform 400ms;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+.avatarSmall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #ffff;
+  border-radius: 50%;
+  border: 0 solid none;
+  width: 10rem;
+  height: 11rem !important;
+  margin: 0.5rem;
+}
+
+.avatarChecked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #ffff;
+  border: 0.3rem solid #61A0FA;
+  width: 16rem;
+  height: 16rem;
+  margin: 0.5rem;
+  transition: transform 400ms;
+}
+
+.avatarChecked.avatar {
+  border: unset !important;
+}
+
+.avatarChecked:hover {
+  transform: scale(1.1);
+}
+
+#name {
+  font-family: 'Montserrat', sans-serif;
+  margin: 1rem 1rem;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+#about {
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem 1rem;
+  width: 20rem;
+  font-weight: 500;
+}
+
+#comment {
+  margin: 0 0 0 2rem;
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.upperRow {
+  display: flex;
+  flex-direction: row;
+  margin: -2rem 0 0 0;
+}
+
+.imageBox {
+  width: 10rem;
+}
+
+.commentBox {
+  margin: 2rem 0 0 -2rem;
+}
+
+
+
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .header {
+    font-size: 15rem;
+  }
+
+  .avatar, .avatarChecked {
+    width: 31rem;
+    height: 31rem;
+    margin: 3rem;
+  }
+
+  .upperRow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imageBox {
+    width: 100%;
+  }
+
+  .avatarSmall {
+    width: 50rem;
+    height: 50rem !important;
+  }
+
+  .detailedContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+  }
+
+  .name {
+    font-size: 15rem;
+  }
+
+  #about {
+    width: 100%;
+    font-size: 5rem;
+  }
+
+  #comment {
+    font-size: 5.8rem;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+  #name {
+    font-size: 8.4rem;
+  }
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

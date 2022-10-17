@@ -1,0 +1,132 @@
+@import "../../styles/rtc";
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 6.4rem;
+}
+
+.index {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #61A0FA;
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin: 1rem 0 1rem 2rem;
+}
+
+.step {
+  border-radius: 24px;
+  margin: 0 1rem 0 0;
+  background-color: #FBFAFA;
+  padding: 2rem;
+}
+
+#newsImage {
+  border-radius: 50%;
+  min-width: 7.4rem;
+  max-width: 7.4rem;
+  max-height: 7.4rem;
+  min-height: 7.4rem;
+  margin: 2rem 0 1rem 2rem;
+}
+
+.date {
+  font-family: 'Montserrat', sans-serif;
+  color: #969696;
+  font-size: 1.6rem;
+  margin: 1rem 0 1rem 2rem;
+  font-weight: 400;
+}
+
+.link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+}
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  #newsImage {
+    min-width: 20rem;
+    max-width: 20rem;
+    max-height: 20rem;
+    min-height: 20rem;
+  }
+
+  .WrapperNews {
+    display: flex;
+    flex-direction: row;
+    width: initial;
+    height: initial;
+    padding: 5rem 3rem;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+      height: 0;
+      width: 0;
+      background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+    /* Optional: show position indicator in red */
+    &::-webkit-scrollbar-thumb {
+      display: none;
+      height: 0;
+      width: 0;
+      background: rgba(255, 255, 255, 0);
+    }
+  }
+
+  .text {
+    font-size: 7.8rem;
+  }
+
+  .date {
+    font-size: 7.6rem;
+  }
+
+  .step {
+    padding: 7rem;
+  }
+
+  .title {
+    font-size: 12rem;
+    margin-top: 20rem;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}
+

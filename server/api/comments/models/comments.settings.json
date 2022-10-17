@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "name": "comments",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comment": {
+      "type": "text"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "user_name": {
+      "type": "string"
+    },
+    "about_user": {
+      "type": "string"
+    },
+    "initiative": {
+      "model": "initiative"
+    },
+    "color": {
+      "type": "string"
+    },
+    "show_on_main": {
+      "type": "boolean",
+      "default": false
+    },
+    "showOnInitiativePage": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

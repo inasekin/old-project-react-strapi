@@ -1,0 +1,231 @@
+@import "../../styles/rtc";
+
+#modal {
+  border: initial;
+  background-color: #FBFAFA;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FBFAFA;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+
+  border-radius: 24px;
+  font-family: 'Montserrat', sans-serif;
+
+  > div {
+    width: 100%;
+  }
+}
+
+.field_text {
+  margin-top: 5rem;
+}
+
+.contact_telephone {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.field_region {
+  margin-bottom: 2.5rem;
+}
+
+.field_region label {
+  margin-bottom: 1rem;
+}
+
+.modal_select {
+  border-radius: 10px !important;
+  border: 0 !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  padding: 10px !important;
+  line-height: 150% !important;
+}
+
+.input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  border: 0;
+  width: 100%;
+  margin: 1rem 0 0 0;
+
+  padding: 10px 2px;
+  border-radius: 10px;
+}
+
+#input:focus {
+  border: 2px solid #61A0FA;
+}
+
+.already {
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 24px;
+  border: 2px solid #61A0FA;
+}
+
+.valid {
+  font-size: 1.2rem;
+  text-align: center;
+  width: 32rem;
+  padding: 0.5rem;
+  border-radius: 24px;
+  border: 2px solid rgba(255, 0, 0, 0.548);
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem !important;
+  margin-bottom: 2rem !important;
+}
+
+label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+input {
+  font-weight: 600;
+  font-size: 18px;
+
+  &::placeholder {
+    color: #E4E4E4;
+  }
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600 !important;
+  font-size: 2.8rem !important;
+  line-height: 1 !important;
+  width: 90%;
+
+  padding: 0 1rem !important;
+  margin-bottom: 3.5rem !important;
+}
+
+.access {
+  background-color: #61A0FA !important;
+  color: white;
+  font-weight: 600;
+  outline: none;
+  border: initial;
+  padding: 1.5rem 4rem;
+  border-radius: 7rem;
+  font-size: 3rem;
+}
+
+.access:disabled {
+  background-color: grey !important;
+  color: #333;
+  opacity: 0.4;
+}
+
+#modalClose {
+  position: absolute;
+  top: -5rem;
+  right: -1rem;
+  z-index: 1;
+  background-color: initial;
+  border: initial;
+
+  color: #61A0FA;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.wrapperClose {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+
+  #modal {
+    font-size: 11rem !important;
+  }
+
+  #form {
+    width: 100%;
+  }
+
+  .text {
+    font-size: 7rem !important;
+  }
+
+  label {
+    margin-top: 7rem;
+    font-size: 6rem;
+  }
+
+  #input {
+    font-size: 6rem;
+  }
+
+  #modalClose {
+    font-size: 7rem;
+    padding: 3rem;
+    height: auto;
+    width: 13rem;
+  }
+
+  .already {
+    font-size: 8.5rem;
+    padding: 5rem;
+  }
+
+  .access {
+    font-size: 100%;
+    width: 100%;
+  }
+
+  .valid {
+    font-size: 6rem;
+    text-align: center;
+    width: 50%;
+    margin-top: 5rem;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

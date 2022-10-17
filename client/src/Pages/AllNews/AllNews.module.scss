@@ -1,0 +1,411 @@
+@import "../../styles/rtc";
+
+.upperRow {
+  display: flex;
+  flex-direction: column;
+  width: 80rem;
+}
+
+#filterTag {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  color: #61A0FA;
+  border: 2px solid #61A0FA;
+  border-radius: 24px;
+  padding: 0.2rem 1rem;
+  margin: 0 1rem 1rem 0;
+  background: transparent;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#filterTagChecked {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  background-color: #5287FF;
+  color: #ffff;
+  border-radius: 24px;
+  padding: 0.2rem 1rem;
+  margin: 0 1rem 1rem 0;
+  font-weight: 500;
+  border: 2px solid #5287FF;
+  cursor: pointer;
+}
+
+.columnContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftColumn {
+  max-width: 55rem;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin: 0 0 0 5rem;
+}
+
+.end {
+  width: 74rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  border-radius: 24px;
+  border: 2px solid #61A0FA;
+  font-size: 2rem;
+  background: transparent;
+  color: #61A0FA;
+  padding: 1rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.endContainer {
+  margin: 0 0 2rem 0;
+}
+
+.secondBlock {
+  display: flex;
+  flex-direction: column;
+  max-width: 55rem;
+}
+
+.header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6.4rem;
+  font-weight: 700;
+}
+
+.subHeader {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+#whiteText {
+  color: #ffff;
+}
+
+#blackText {
+  color: black;
+}
+
+#link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: black;
+  transition: transform 400ms;
+}
+
+.tag {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #61A0FA;
+  border-radius: 3rem;
+  border: 0.2rem solid #61A0FA;
+  background-color: transparent;
+  margin: 0 0 3rem 0;
+  text-align: center;
+
+  padding: .2rem 1rem;
+  display: inline-block;
+  width: auto;
+  max-width: 18rem;
+  cursor: pointer;
+}
+
+.date {
+  margin: 1rem 0 0 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #969696;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.cardVertical {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+
+  img {
+    border-radius: 2.5rem;
+  }
+}
+
+.cardHorizontal {
+  margin: 2rem 0 2rem 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 3rem 0 4rem 0;
+}
+
+.textHorizontal {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.initiativeCard {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  border-radius: 24px;
+  padding: 4rem;
+}
+
+.initiativeCard {
+  margin-left: 0;
+}
+
+#newsImage {
+  border-radius: 24px;
+  height: 27rem;
+  width: 34rem;
+}
+
+.initiativeName {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  font-weight: 900;
+  font-size: 3.6rem;
+}
+
+.initiativeDescription {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.initiativeDeveloping {
+  font-family: 'Montserrat', sans-serif;
+  color: #2b4c79;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.supportButton {
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  font-size: 2.8rem;
+  font-weight: 600;
+  border-radius: 5rem;
+  border: 0.2rem solid #ffff;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  margin-top: 5rem;
+}
+
+.externalCard {
+  margin: 0 0 1rem 0;
+  border-radius: 24px;
+  padding: 2rem;
+}
+
+.logo {
+  min-width: 5rem;
+  max-width: 5rem;
+  min-height: 5rem;
+  max-height: 5rem;
+  border-radius: 50%;
+
+  & + p {
+    font-size: 18px;
+    overflow-wrap: break-word;
+  }
+}
+
+.initiativeWrapper {
+  padding-left: 5rem;
+}
+
+.showMore {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 24px;
+  border: 2px solid #61A0FA;
+  font-size: 2rem;
+  font-weight: 800;
+  background: transparent;
+  color: #61A0FA;
+  padding: 1rem;
+  margin: 2rem 0 2rem 0;
+  cursor: pointer;
+  transition: transform 300ms;
+}
+
+.showMore:hover {
+  transform: scale(1.2);
+}
+
+.dateExt {
+  color: #969696;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .text, .textHorizontal {
+    font-size: 8rem;
+  }
+
+  .cardHorizontal {
+    flex-direction: column;
+  }
+
+  .tag {
+    font-size: 6.6rem;
+    max-width: 70rem;
+    border-radius: 12rem;
+    padding: 1rem 3rem;
+  }
+
+  .date {
+    font-size: 7rem;
+    margin-bottom: 15rem;
+  }
+
+  .newsImage {
+    border-radius: 9rem;
+  }
+
+  .header {
+    font-size: 14.4rem;
+  }
+
+  #filterTag {
+    font-size: 5.6rem;
+    border: 1px solid #61A0FA;
+    border-radius: 24px;
+    margin: 0 5rem 3rem 0;
+    padding: 1rem 2rem;
+  }
+
+  .initiativeCard {
+    flex-direction: column;
+  }
+
+  .initiativeName {
+    font-size: 10.6rem;
+  }
+
+  .initiativeDescription {
+    font-size: 8rem;
+  }
+
+  .supportButton {
+    font-size: 7.8rem;
+    border-radius: 25rem;
+    padding: 2rem 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .showMore {
+    font-size: 7rem;
+    display: block;
+    padding: 2rem 3rem;
+    margin: 0 auto;
+  }
+
+  .subHeader {
+    margin-top: 10rem;
+    font-size: 12rem;
+  }
+
+  .rightColumn {
+    display: flex;
+    flex-direction: row;
+    width: initial;
+    height: initial;
+    padding: 5rem 3rem;
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+
+  .logo {
+    min-width: 25rem;
+    max-width: 25rem;
+    min-height: 25rem;
+    max-height: 25rem;
+
+    margin-bottom: 5rem;
+
+    & + p {
+      font-size: 7rem;
+    }
+  }
+
+  .dateExt {
+    font-size: 5rem;
+  }
+
+  .externalCard {
+    margin-bottom: 10rem;
+    padding: 7rem;
+    min-width: 100rem;
+    margin-right: 10rem;
+  }
+
+  .initiativeCard {
+    margin-bottom: 7rem;
+  }
+
+  #filterTagChecked {
+    font-size: 5.6rem;
+    border: 1px solid #61A0FA;
+    border-radius: 24px;
+    margin: 0 5rem 3rem 0;
+    padding: 1rem 2rem;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+  .logo {
+
+    & + p {
+      font-size: 14px;
+    }
+  }
+
+  #newsImage {
+    height: auto;
+    width: 100%;
+  }
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

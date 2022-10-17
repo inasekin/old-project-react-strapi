@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_expert_block_expert_blocks",
+  "info": {
+    "name": "expert_block",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "expert_text": {
+      "type": "richtext"
+    },
+    "about_expert": {
+      "type": "string"
+    },
+    "expert_avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "showExpert": {
+      "type": "boolean"
+    }
+  }
+}

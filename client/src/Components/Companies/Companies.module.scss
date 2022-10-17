@@ -1,0 +1,156 @@
+@import "../../styles/rtc";
+
+.wrapper {
+  background-color: #1E2A46;
+}
+.container {
+  background-color: #1E2A46;
+}
+
+.lowerRow {
+  display: flex;
+  flex-direction: row;
+  width: 80rem;
+}
+
+.header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 6.4rem;
+  color: #ffff;
+  margin-bottom: 5rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  margin: 2rem 3rem 0 6rem;
+}
+
+.partners {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 9rem;
+  line-height: 1;
+  color: #ffff;
+}
+
+.about {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #ffff;
+}
+
+.imageColumn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 20rem;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+    height: 0;
+    width: 0;
+    background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+  /* Optional: show position indicator in red */
+  &::-webkit-scrollbar-thumb {
+    display: none;
+    height: 0;
+    width: 0;
+    background: rgba(255, 255, 255, 0);
+  }
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 15rem;
+  min-width: 15rem;
+  background-color: #ffff;
+  margin: 0 1rem;
+  transition: transform 400ms;
+  overflow: hidden;
+
+  img {
+    max-width: 108px;
+  }
+}
+
+.logo {
+  width: 85%;
+}
+
+.imageContainer:hover {
+  transform: scale(1.25);
+}
+
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .header {
+    font-size: 10rem;
+    margin-top: 20px;
+  }
+
+  .carouselWrapper {
+    overflow: hidden;
+  }
+
+  .partners {
+    font-size: 18rem;
+  }
+
+  .about {
+    font-size: 5rem;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .imageContainer {
+    height: 35rem;
+    min-width: 35rem;
+  }
+
+  .imageColumn {
+    width: 100%;
+    height: 45rem;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

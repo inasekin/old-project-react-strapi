@@ -1,0 +1,73 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_page_contents",
+  "info": {
+    "name": "main-page-content",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project_info_title": {
+      "type": "string"
+    },
+    "project_info_description": {
+      "type": "text"
+    },
+    "author_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "author_text_bullets": {
+      "type": "json"
+    },
+    "video_id": {
+      "type": "string"
+    },
+    "contact_us_text": {
+      "type": "string"
+    },
+    "videoPlaceholder": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "videoText": {
+      "type": "string"
+    },
+    "author_text": {
+      "type": "string"
+    },
+    "lastBullet": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

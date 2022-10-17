@@ -1,0 +1,82 @@
+@import "../../styles/rtc";
+
+.containerDark {
+}
+
+.containerLight {
+}
+
+.contactNameLight {
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  margin: 0 0 0.5rem 0;
+}
+
+.contactNameDark {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+  margin: 0 0 0.5rem 0;
+}
+
+.contactMail {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #61A0FA;
+
+}
+
+.link {
+  font-size: 3.6rem;
+  margin: 0 0 2.5rem 0;
+
+  &:hover a {
+    color: #1e70bf;
+  }
+}
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .contactNameDark {
+    font-size: 7rem;
+  }
+
+  .contactNameLight {
+    font-size: 6rem;
+  }
+
+  .contactMail {
+    font-size: 9rem;
+  }
+
+  .link {
+    margin-bottom: 10rem;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

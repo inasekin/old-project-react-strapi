@@ -1,0 +1,234 @@
+@import "../../styles/rtc";
+
+.listMenuItems {
+  list-style: none;
+  li {
+    margin-right: 5rem;
+    transition: .4s;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: .4s;
+      a {
+        color: black;
+      }
+    }
+
+    a {
+      font-size: 1.8rem;
+      text-decoration: none;
+      color: black;
+
+      &.active {
+        color: #5287FF;
+      }
+    }
+  }
+}
+
+.navWrapper {
+  display: flex;
+  width: 100%;
+}
+
+.nav {
+  margin-top: 4rem;
+  font-weight: 600;
+}
+
+.black {
+  background-color: #1e2a46;
+
+  ul li a{
+    color: white;
+
+    &.active {
+      &:hover {
+        color: rgb(82, 135, 255);
+      }
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .menuToggle {
+    span {
+      background: white;
+    }
+
+    ul li a{
+      color: black;
+    }
+  }
+}
+
+.initiative {
+  position: absolute;
+  color: white;
+  margin-left: 9rem;
+}
+
+.logo {
+  img {
+    width: 24rem;
+  }
+}
+
+.menuToggle {
+  display: block;
+  position: relative;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+
+  a {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: tomato;
+    }
+  }
+
+  input {
+    position: absolute;
+    top:0;
+    display: block;
+    width: 26px;
+    height: 20px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    margin-bottom: 5px;
+
+    background: black;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+  }
+
+  span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(3px,-3px);
+    background: #232323;
+  }
+
+  input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(3px, 4px);
+  }
+
+  input:checked ~ .menu {
+    display: block;
+    transform: none;
+  }
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100vh;
+  padding: 70px 20px 20px;
+
+  background: white;
+  list-style-type: none;
+
+  z-index: -1;
+
+  li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+}
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .initiative {
+    display: none;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+  .logo {
+    img {
+      width: 130px;
+    }
+  }
+
+  .nav {
+    margin-top: 17px;
+    margin-bottom: 22px;
+  }
+
+  .listMenuItems {
+    li {
+      a {
+        font-size: 16px;
+      }
+      padding: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

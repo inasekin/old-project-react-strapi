@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_foreign_experience_foreign_experiences",
+  "info": {
+    "name": "foreign_experience",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "country_experience": {
+      "type": "component",
+      "repeatable": true,
+      "component": "country-experience.country-experience"
+    }
+  }
+}

@@ -1,0 +1,240 @@
+@import "../../styles/rtc";
+
+.rightColumn {
+  background-color: #FBFAFA;
+  border-radius: 24px;
+  padding: 2rem;
+  cursor: default;
+}
+
+.question {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 6rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  border: none;
+  width: 32rem;
+}
+
+#input:focus {
+  border: 2px solid #61A0FA;
+}
+
+#inputQuestion {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-align: top;
+  width: 32rem;
+  height: 10rem;
+  border: none;
+  resize: none;
+  margin-bottom: 1rem;
+}
+
+#inputQuestion::-webkit-input-placeholder {
+  color: #E4E4E4;
+}
+
+#inputQuestion:-moz-placeholder { /* Firefox 18- */
+  color: #E4E4E4;
+}
+
+#inputQuestion::-moz-placeholder {  /* Firefox 19+ */
+  color: #E4E4E4;
+}
+
+#inputQuestion:-ms-input-placeholder {
+  color: #E4E4E4;
+}
+
+#inputQuestion::placeholder {
+  color: #E4E4E4;
+}
+
+#inputQuestion:focus {
+  border: 2px solid #61A0FA;
+}
+
+.sendButton {
+  padding: 1rem 2.5rem;
+  background-color: #61A0FA;
+  color: #ffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 3rem;
+  margin: 2rem 0 1rem 0;
+  transition: transform 400ms;
+}
+
+.sendButton:hover {
+  transform: scale(1.1);
+}
+
+.field {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+
+  input, textarea {
+    width: 100% !important;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    font-weight: bold;
+    padding: 1rem;
+  }
+}
+
+.checkbox {
+  margin-bottom: 0.2em;
+}
+
+/* для элемента input c type="checkbox" */
+.customCheckbox>input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.customCheckbox>span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.customCheckbox>span::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 7px;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80% 80%;
+}
+
+/* стили при наведении курсора на checkbox */
+.customCheckbox>input:not(:disabled):not(:checked)+span:hover::before {
+  border-color: #b3d7ff;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.customCheckbox>input:not(:disabled):active+span::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.customCheckbox>input:focus+span::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.customCheckbox>input:focus:not(:checked)+span::before {
+  border-color: #80bdff;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.customCheckbox>input:checked+span::before {
+  border-color: #47ACFF;
+  background-color: #47ACFF;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.customCheckbox>input:disabled+span::before {
+  background-color: #e9ecef;
+}
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .question {
+    margin-top: 20rem;
+    font-size: 15rem;
+    margin-bottom: 10rem;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .field {
+    width: 100%;
+    label {
+      font-size: 7rem;
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+
+    input, textarea {
+      height: 20rem !important;
+      font-size: 7rem;
+      margin-bottom: 8rem;
+      padding: 4rem;
+    }
+  }
+
+  .sendButton {
+    border-radius: 25rem;
+    padding: 5rem;
+    font-size: 12rem;
+  }
+
+  .rightColumn {
+    margin-bottom: 20rem;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

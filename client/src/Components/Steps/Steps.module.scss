@@ -1,0 +1,93 @@
+@import "../../styles/rtc";
+
+.wrapper {
+  width: 100vw;
+}
+
+.container {
+  margin: 6rem 0 6rem 0;
+  width: 80rem;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 5rem;
+  font-weight: 600;
+  font-size: 6.4rem;
+  line-height: 130%;
+}
+
+.index {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #61A0FA;
+  font-size: 9rem;
+  line-height: 130%;
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 150%;
+}
+
+.stepsContainer {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 3rem;
+}
+
+.step {
+  margin: 0 1rem 0 0;
+}
+
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .title {
+    font-size: 10rem;
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+
+  .stepsContainer {
+    flex-direction: column;
+
+    .index {
+      font-size: 25rem;
+    }
+
+    .text {
+      font-size: 7rem;
+    }
+  }
+
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

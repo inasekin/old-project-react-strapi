@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "external_news",
+  "info": {
+    "name": "external_news",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "text"
+    },
+    "date": {
+      "type": "date"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "background": {
+      "type": "string",
+      "default": "#FBFAFA"
+    },
+    "tag": {
+      "type": "string"
+    }
+  }
+}

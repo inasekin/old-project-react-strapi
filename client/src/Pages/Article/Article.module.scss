@@ -1,0 +1,374 @@
+@import "../../styles/rtc";
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 5rem;
+}
+
+.image {
+  border-radius: 24px;
+  margin: 1rem 0 0 0;
+  height: 52rem;
+}
+
+.mediaInfo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-style: italic;
+  margin: 1rem 0 0 0;
+  color: #7E7E7E;
+}
+
+.pre {
+
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Montserrat', sans-serif;
+
+  margin: 2rem 15rem 7rem 0;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.sideImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expertAvatar {
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  min-width: 6rem;
+  max-width: 6rem;
+  min-height: 6rem;
+  max-height: 6rem;
+}
+
+.expertAbout {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 1rem 0;
+}
+
+.video {
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.quoteContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.quote {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.quoteAuthor {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-style: italic;
+  width: 40rem;
+  margin-top: 5rem;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  width: 45rem;
+}
+
+.bulletContainer {
+  display: flex;
+  flex-direction: column;
+  width: 55rem;
+}
+
+.bullet {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0 10rem 1rem 3rem;
+}
+
+.preNar {
+
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.index {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+#table {
+  border: none;
+  width: 100%;
+}
+
+#header {
+  background: #F6FBFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  border: 2px solid #F6FBFF;
+  border-radius: 24px;
+  min-width: 8rem;
+  height: 7rem;
+  text-align: left;
+  padding: 0 2rem;
+}
+
+#cell {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  border-bottom: 3px solid #F6FBFF;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  min-width: 8rem;
+  height: 10rem;
+  padding: 0 2rem;
+  text-align: left;
+}
+
+.planContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 5rem;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80rem;
+}
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #61A0FA;
+  border-radius: 2rem;
+
+  padding: 1rem 3rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  margin: 0 1rem 1rem 0;
+}
+
+.link {
+  font-family: 'Montserrat', sans-serif;
+  color: #61A0FA;
+  text-decoration: underline;
+  margin: 0 1rem 1rem 0;
+  font-size: 2rem;
+}
+
+.linkTag {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+}
+
+.tagsContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60rem;
+  margin: 2rem 20rem 0 0;
+}
+
+.lowTag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #61A0FA;
+  border-radius: 2rem;
+
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #61A0FA;
+  margin: 0 1rem 1rem 0;
+}
+
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .title {
+    font-size: 10.4rem;
+  }
+
+  .subtitle {
+    margin-top: 12rem;
+    font-size: 8rem;
+  }
+
+  .mediaInfo {
+    font-size: 5rem;
+  }
+
+  .pre {
+    margin: 7rem 0;
+    font-size: 6rem;
+  }
+
+  .expertAvatar {
+    min-width: 30rem;
+    max-width: 30rem;
+    min-height: 30rem;
+    max-height: 30rem;
+  }
+
+  .sideImageContainer {
+    flex-direction: row;
+    margin-left: 15rem;
+    margin-bottom: 7rem;
+  }
+
+  .expertAbout {
+    margin-left: 3rem;
+    font-size: 5rem;
+  }
+
+  .quote {
+    margin-top: 5rem;
+    font-size: 5.5rem;
+  }
+
+  .quoteAuthor {
+    margin-left: 25rem;
+    font-size: 5rem;
+  }
+
+  .preNar {
+    margin-left: 15rem;
+    margin-bottom: 15rem;
+    font-size: 5.5rem;
+  }
+
+  #header {
+    font-size: 7rem;
+    height: 7rem;
+    padding: 3rem 12rem;
+  }
+
+  #cell {
+    font-size: 7rem;
+    font-weight: 700;
+    height: 10rem;
+    padding: 3rem 12rem;
+  }
+
+  .tableWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+      height: 0;
+      width: 0;
+      background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+    /* Optional: show position indicator in red */
+    &::-webkit-scrollbar-thumb {
+      display: none;
+      height: 0;
+      width: 0;
+      background: rgba(255, 255, 255, 0);
+    }
+  }
+
+  .lowTag {
+    border-radius: 15rem;
+    font-size: 6rem;
+  }
+
+  .tagsContainer {
+    width: 100%;
+  }
+
+  .linkContainer {
+    width: 100%;
+    .linkTag {
+      font-size: 7rem;
+      .tag {
+        border-radius: 15rem;
+        padding: 2rem 5rem;
+        margin-right: 5rem;
+      }
+    }
+    .link {
+      font-size: 7rem;
+    }
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+  .image {
+    height: 200px;
+  }
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

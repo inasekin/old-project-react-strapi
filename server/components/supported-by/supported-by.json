@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_supported_by_supported_bies",
+  "info": {
+    "name": "supported_by",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "supported": {
+      "type": "boolean",
+      "default": false
+    },
+    "organization": {
+      "type": "string"
+    },
+    "background": {
+      "type": "string"
+    }
+  }
+}

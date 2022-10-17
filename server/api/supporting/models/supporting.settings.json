@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "supportings",
+  "info": {
+    "name": "supporting",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "initiatives": {
+      "via": "users",
+      "collection": "initiative",
+      "dominant": true
+    },
+    "regionField": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,315 @@
+@import "../../styles/rtc";
+
+.wrapper {
+  cursor: default;
+  position: relative;
+
+  &:after {
+    content: "";
+    background-image: url('Author_background.png');
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.videoBox {
+  display: flex;
+  width: 50%;
+
+  img {
+    border-radius: 2rem;
+  }
+}
+
+.video {
+  width: 100%;
+}
+
+.checkboxContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 9rem;
+}
+
+.checkbox {
+  border-color: unset;
+  color: initial;
+  &:not(:first-child) {
+    margin-left: 2.5rem;
+  }
+
+  input:checked ~ label:after {
+    top: -2px !important;
+    left: -3px !important;
+    width: 21px !important;
+    height: 21px !important;
+    background-color: #5287FF !important;
+  }
+}
+
+.textField {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 2.8rem;
+  color: white;
+  height: 25rem;
+  overflow: hidden;
+  margin: 2rem 0 1rem 0;
+}
+
+.name {
+  font-size: 6rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0;
+}
+
+.about {
+  font-weight: 500;
+  font-size: 3.6rem;
+  line-height: 1;
+
+  color: white;
+  margin-top: 1rem;
+  width: 28rem;
+}
+
+.authorImageContainer {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.blueCircle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #61A0FA;
+  z-index: 2;
+}
+
+.blueCircleBig {
+  bottom: 0;
+  width: 30rem;
+  height: 30rem;
+}
+
+.blueCircleSmall {
+  top: 0;
+  right: 5rem;
+  width: 12rem;
+  height: 12rem;
+  z-index: 3;
+}
+
+.wrapperAuthorImg {
+  width: 40rem;
+  position: relative;
+}
+
+.authorImg {
+  width: 100%;
+  padding-bottom: 100%;
+  margin: 0 0 3rem 0;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 5rem;
+
+  z-index: 3;
+}
+
+.videoContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+
+  background: linear-gradient(150.01deg, #FFB800 39.97%, #FF8E6D 79.72%);
+  border-radius: 24px;
+  margin-top: 10rem;
+}
+
+.textBox {
+  width: 50%;
+  padding-left: 3.8rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.actual {
+  font-weight: 600;
+  font-size: 5.4rem;
+  line-height: 110.19%;
+  color: white;
+  margin-bottom: 10rem;
+}
+
+.videoButton {
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: transparent;
+  border-radius: 159px;
+  border: 2px solid #FFFFFF;
+  padding: 1.4rem 1.3rem;
+  cursor: pointer;
+
+  img {
+    margin-right: 1rem;
+  }
+
+  .videoButtonText {
+    font-weight: 600;
+    line-height: 1;
+    font-size: 2.4rem;
+    padding-bottom: 5px;
+  }
+}
+
+.videoImagePlay {
+  width: 3rem;
+}
+
+.contentWrapper {
+  margin-top: 20rem;
+}
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .wrapper {
+
+    &:after {
+      background-size: 400%;
+      bottom: 15%;
+    }
+  }
+
+  .text {
+    display: block;
+    color: white;
+    font-size: 5rem;
+    margin-bottom: 10rem;
+    padding-left: 25%;
+    font-weight: bold;
+  }
+
+  .authorImageContainer {
+    width: initial;
+    height: initial;
+    margin: initial;
+    padding-left: 25%;
+    margin-bottom: 15rem;
+
+    img {
+      width: initial;
+    }
+  }
+
+  .name {
+    font-size: 14rem;
+  }
+
+  .about {
+    font-size: 8rem;
+    width: 80%;
+    margin-bottom: 5rem;
+  }
+
+  .actual {
+    font-size: 15rem
+  }
+
+  .textBox {
+  }
+
+  .videoContainer {
+    margin-top: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+  }
+
+  .videoBox {
+    width: 100%;
+    margin-top: 7rem;
+
+    img {
+      width: 100%;
+      border-radius: 15rem;
+    }
+  }
+
+  .videoImagePlay {
+    width: initial;
+  }
+
+  .videoButton {
+    font-size: 7rem;
+    margin-top: 7rem;
+    padding: 3rem;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+  .text {
+    font-size: 16px;
+    font-weight: 500;
+
+    & img {
+      width: 100%;
+    }
+  }
+  .actual {
+    line-height: unset;
+  }
+
+  .videoButton {
+    width: 143px;
+    height: 45px;
+  }
+
+  .wrapperAuthorImg {
+    width: unset;
+  }
+
+  .videoButtonText {
+    font-size: 16px !important;
+    line-height: 110.19%;
+    padding-bottom: unset !important;
+  }
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

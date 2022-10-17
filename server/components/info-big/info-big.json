@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_info_big_info_bigs",
+  "info": {
+    "name": "info_big",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text_start": {
+      "type": "string"
+    },
+    "text_end": {
+      "type": "string"
+    },
+    "emphasis": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "value": {
+      "type": "integer"
+    }
+  }
+}

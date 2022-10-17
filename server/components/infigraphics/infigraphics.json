@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_infigraphics_infigraphics",
+  "info": {
+    "name": "infigraphics",
+    "icon": "air-freshener",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "infographics_field": {
+      "type": "component",
+      "repeatable": true,
+      "component": "infographics-field.infographics-field"
+    },
+    "text": {
+      "type": "string"
+    },
+    "info_big": {
+      "type": "component",
+      "repeatable": true,
+      "component": "info-big.info-big"
+    }
+  }
+}

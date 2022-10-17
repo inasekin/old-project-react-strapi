@@ -1,0 +1,78 @@
+@import "../../styles/rtc";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.name {
+  display: block;
+}
+
+.mobileName {
+  display: none;
+}
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+  .mobileName {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .name {
+    display: none;
+  }
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .mobileName {
+    width: auto;
+    margin-left: initial;
+    margin-right: initial;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+  }
+
+  h1 {
+    width: 100%;
+    font-size: 10rem;
+  }
+
+  .text {
+    font-size: 6rem;
+    width: 100%;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}
+

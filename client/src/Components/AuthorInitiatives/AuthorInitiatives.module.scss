@@ -1,0 +1,278 @@
+@import "../../styles/rtc";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin-bottom: 15rem;
+  margin-top: 10rem;
+}
+
+.bubbleContainer {
+  height: 35rem;
+  width: 80rem;
+}
+
+.solveButton {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #ffff;
+  background-color: transparent;
+  border-radius: 2rem;
+  border: 0.2rem solid #ffff;
+  width: 13rem;
+  height: 4rem;
+  cursor: pointer;
+  margin: 2rem 0 0 0;
+  font-size: 2rem;
+}
+
+.solveButtonBig {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffff;
+  background-color: transparent;
+  border-radius: 15rem;
+  border: 0.3rem solid #ffff;
+  width: 18rem;
+  height: 6rem;
+  cursor: pointer;
+  margin: 2rem 0 0 0;
+}
+
+.darkBubble {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #1E2A46;
+  color: #ffff;
+  font-family: 'Montserrat', sans-serif;
+  width: 38rem;
+  height: 38rem;
+  border-radius: 50%;
+  top: 0rem;
+  left: -24rem;
+  z-index: 1;
+  transition: transform 400ms;
+}
+
+.darkText {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 3rem 0 0 0;
+}
+
+.darkBubble:hover {
+  z-index: 100;
+  transform: scale(1.1);
+}
+
+.violetBubble {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(180deg, #816FFF 0%, #649BFB 100%);
+  color: #ffff;
+  font-family: 'Montserrat', sans-serif;
+  width: 38rem;
+  height: 38rem;
+  border-radius: 50%;
+  padding: 3rem;
+  left: -4rem;
+  top: -42rem;
+  z-index: 2;
+  transition: transform 400ms;
+}
+
+.violetBubble:hover {
+  z-index: 100;
+  transform: scale(1.05);
+}
+
+.violetText {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 3rem 0 0 0;
+}
+
+.orangeBubble {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(180deg, #FF8074 0%, #FFB957 100%);
+  color: #ffff;
+  font-family: 'Montserrat', sans-serif;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  padding: 3rem;
+  left: 24rem;
+  top: -85rem;
+  z-index: 3;
+  transition: transform 400ms;
+}
+
+.orangeBubble:hover {
+  z-index: 100;
+  transform: scale(1.05);
+}
+
+.orangeText {
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 3rem 0 0 0;
+}
+
+.blueBubble {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(180deg, #44D2FF 0%, #5287FF 100%);
+  color: #ffff;
+  font-family: 'Montserrat', sans-serif;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  padding: 3rem;
+  left: 60rem;
+  top: -124rem;
+  z-index: 2;
+  transition: transform 400ms;
+}
+
+.blueBubble:hover {
+  z-index: 100;
+  transform: scale(1.05);
+}
+
+.blueText {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 3rem 0 0 0;
+}
+
+.ellipse {
+  position: absolute;
+  width: 13rem;
+  top: 0;
+  left: -5rem;
+  z-index: -1;
+}
+
+.header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6.4rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  width: 40rem;
+  margin: 1rem 0 3rem 0;
+}
+
+.link {
+  font-family: 'Montserrat', sans-serif;
+  color: #61A0FA;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .bubbleContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .darkBubble, .violetBubble, .blueBubble, .orangeBubble {
+    width: calc(100% - 5rem * 2);
+    padding-bottom: calc(100% - 5rem * 2);
+    display: block;
+    left: initial;
+    right: initial;
+    top: initial;
+    margin: 5rem;
+
+    p {
+      font-size: 7rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 2rem;
+    }
+
+    a {
+      position: absolute;
+      left: 50%;
+      top: 80%;
+      transform: translate(-50%, -50%);
+
+      button {
+        font-size: 8rem;
+        width: initial;
+        height: initial;
+        border-radius: 25rem;
+        padding: 4rem;
+      }
+    }
+  }
+
+  .header {
+    font-size: 13.4rem;
+  }
+
+  .link {
+    font-size: 7rem;
+  }
+
+  .ellipse {
+    left: -10rem;
+    width: 38rem;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

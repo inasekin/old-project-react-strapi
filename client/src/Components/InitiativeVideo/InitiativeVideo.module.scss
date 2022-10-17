@@ -1,0 +1,163 @@
+@import "../../styles/rtc";
+
+.wrapper {
+  padding-top: 5rem;
+  background-color: #1E2A46;
+}
+.container {
+  background-color: #1E2A46;
+  padding: 2rem 0 10rem 0;
+}
+
+.videoContainer {
+  background: transparent;
+  border-radius: 24px;
+  border: 2px solid #FFFFFF;
+
+  display: flex;
+  flex-direction: row;
+  padding: 4rem;
+}
+
+.videoBox {
+  position: relative;
+  top: 18%;
+  width: 40rem;
+  height: 30rem;
+}
+
+.textBox {
+  position: relative;
+  top: 16%;
+  left: 14%;
+  width: 40rem;
+  height: 30rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.actual {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.2rem;
+  color: white;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 110.19%;
+}
+
+.videoButton {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: transparent;
+  border-radius: 159px;
+  border: 2px solid #FFFFFF;
+  width: 20rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.videoImagePlay {
+  width: 3rem;
+}
+
+.video {
+  overflow: hidden;
+  border: none;
+  border-radius: 24px;
+  height: 100%;
+  width: max-content;
+
+  > .embed {
+    height: 100%;
+  }
+}
+
+.video img {
+  height: 30rem;
+  width: 52rem;
+}
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .videoContainer {
+    flex-direction: column-reverse;
+    padding: 10rem 10rem 40rem 10rem;
+    margin-top: 20rem;
+  }
+
+  .videoBox {
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+  }
+
+  .actual {
+    font-size: 12rem;
+    margin-top: 7rem;
+  }
+
+  .textBox {
+    position: relative;
+    top: initial;
+    left: initial;
+    width: initial;
+    height: initial;
+  }
+
+  .videoButton {
+    margin-top: 12rem;
+    width: 143px;
+    height: 40px;
+    position: absolute;
+    top: 250px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 110.19%;
+  }
+
+  .videoImagePlay {
+    width: auto;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+  .video img {
+    width: 230px;
+    height: 130px;
+  }
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+  .videoButton {
+    margin-top: 1rem;
+  }
+}
+
+
+@media print {
+}

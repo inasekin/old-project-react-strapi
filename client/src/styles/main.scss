@@ -1,0 +1,50 @@
+// global vars
+@import 'project-vars';
+@import 'project-mixins';
+
+:root {
+  --color: red;
+}
+
+.mt-100 {
+  margin-top: 10rem;
+}
+
+.mt-50 {
+  margin-top: 5rem;
+}
+
+.mb-100 {
+  margin-bottom: 10rem;
+}
+
+.mb-50 {
+  margin-bottom: 5rem;
+}
+
+.mt-20 {
+  margin-top: 2rem;
+}
+
+.mb-20 {
+  margin-bottom: 2rem !important;
+}
+
+.dimmer.well-response-dimmer {
+  background: linear-gradient(179.99deg, rgba(43, 217, 0, 0.6) 0.01%, rgba(0, 255, 163, 0.6) 58.93%) !important;
+}
+
+// bootstrap
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/bootstrap-grid';
+
+// reboot
+@import "project-reboot";
+
+// utils
+@import "project-utils";
+
+// semantic-ui
+@import "semantic-ui/checkbox";
+@import "semantic-ui/accordion";
+@import "semantic-ui/modal";

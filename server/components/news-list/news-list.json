@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_news_list_news_lists",
+  "info": {
+    "name": "news_list",
+    "icon": "align-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "text_under_icon": {
+      "type": "string"
+    },
+    "bullets": {
+      "type": "json"
+    }
+  }
+}

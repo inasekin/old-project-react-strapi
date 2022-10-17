@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "author_page_contents",
+  "info": {
+    "name": "author-page-content",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "about_author": {
+      "type": "text"
+    },
+    "author_facts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "author-facts.author-facts"
+    },
+    "under_bubbles_text_header": {
+      "type": "string"
+    },
+    "under_bubbles_text": {
+      "type": "string"
+    },
+    "projects_header": {
+      "type": "string"
+    },
+    "project_card_author_page": {
+      "type": "component",
+      "repeatable": true,
+      "component": "project-card-author-page.project-card-author-page"
+    },
+    "author_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "biography": {
+      "type": "richtext"
+    },
+    "bio_title": {
+      "type": "string"
+    }
+  }
+}

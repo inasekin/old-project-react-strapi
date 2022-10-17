@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_infographics_field_infographics_fields",
+  "info": {
+    "name": "infographics_field",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "value": {
+      "type": "integer"
+    },
+    "color": {
+      "type": "string"
+    },
+    "header": {
+      "type": "string"
+    }
+  }
+}

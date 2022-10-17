@@ -1,0 +1,81 @@
+@import "../../styles/rtc";
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 12rem 0 0;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 110.19%;
+}
+
+.pre {
+  font-family: 'Montserrat', sans-serif;
+
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 150%;
+  margin-bottom: 3rem;
+}
+
+#accordionColumn {
+  margin: -2rem 0 0 0;
+}
+
+.upperRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.solutionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .title {
+    font-size: 10rem;
+  }
+
+  .solutionContainer {
+    padding-left: 15rem;
+
+    .title {
+      font-size: 15rem;
+      margin-top: 10rem;
+    }
+  }
+
+  .pre {
+    font-size: 7rem;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

@@ -1,0 +1,98 @@
+@import "../../styles/rtc";
+
+.header {
+  font-weight: 600;
+  font-size: 8rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 110.19%;
+}
+
+.text {
+  font-size: 2rem;
+  margin: 1rem 0 0 0;
+  font-weight: 500;
+}
+
+.logo {
+  transition: transform 400ms;
+}
+
+.logo:hover {
+  transform: rotate(-5deg);
+}
+
+.counter {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14rem;
+  color: #5287FF;
+}
+
+.countText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #5287FF;
+  margin-left: 7rem;
+  line-height: 110.19%;
+
+  width: 180px;
+  position: relative;
+  top: 15px;
+}
+
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+  .header {
+    font-size: 18rem;
+  }
+
+  .logo {
+    object-fit: cover;
+    height: 280px;
+  }
+
+  .text {
+    font-size: 7rem;
+    margin-bottom: 10rem;
+    margin-top: 40px;
+  }
+
+  .counter {
+    font-size: 28rem;
+  }
+
+  .countText {
+    font-size: 6.8rem;
+    width: initial;
+    margin: 0 0 20rem 0;
+  }
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

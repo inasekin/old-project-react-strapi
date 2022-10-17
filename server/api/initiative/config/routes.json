@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/initiatives",
+      "handler": "initiative.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/initiatives/count",
+      "handler": "initiative.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/initiatives/:id",
+      "handler": "initiative.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/initiatives",
+      "handler": "initiative.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/initiatives/:id",
+      "handler": "initiative.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/initiatives/:id",
+      "handler": "initiative.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/initiatives/:id/support",
+      "handler": "initiative.support",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/initiatives/sendMail",
+      "handler": "initiative.sendMail",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

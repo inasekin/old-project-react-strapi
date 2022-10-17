@@ -1,0 +1,218 @@
+@import "../../styles/rtc";
+
+.black {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: black;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blue {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #A9DCFD;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  width: 85rem;
+}
+
+.dark {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #5287FF;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  width: 85rem;
+}
+
+.darkerBlue {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #5287FF;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  width: 60rem;
+}
+
+.plus {
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0 0.3rem 0 1.4rem;
+}
+
+
+.preWhite {
+
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  overflow-wrap: normal;       /* Internet Explorer 5.5+ */
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  font-size: 2rem;
+}
+
+.preWhiteQual {
+
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  overflow-wrap: normal;       /* Internet Explorer 5.5+ */
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.preBlack {
+
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  overflow-wrap: normal;       /* Internet Explorer 5.5+ */
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 2rem;
+}
+
+.problemContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.problemImg {
+  min-width: 15rem;
+  max-width: 15rem;
+  min-height: 15rem;
+  max-height: 15rem;
+  border-radius: 50%;
+  margin: 0 0 0 5rem;
+}
+
+.askText {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  width: 8rem;
+  font-size: 3rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.solutionContainer {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-width: 50rem;
+  margin: 0 0 0 -8rem;
+}
+
+.headerOne {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 4rem;
+  margin: 1rem 0 3rem 0;
+}
+
+.textMedium {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 1rem 0 3rem 6rem;
+  width: 40rem;
+
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  overflow-wrap: normal;       /* Internet Explorer 5.5+ */
+
+  li {
+    margin-bottom: 2rem;
+  }
+}
+
+.textBig {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 2rem 0 2rem 15rem;
+  width: 25rem;
+
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  overflow-wrap: normal;       /* Internet Explorer 5.5+ */
+}
+
+.solutionImage {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.headerSecond {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 5rem 0 3rem 0;
+}
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .blue, .dark, .black, .darkerBlue {
+    font-size: 7rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .plus {
+    font-size: 23rem;
+  }
+
+  .preBlack, .preWhite, .preWhiteQual {
+    font-size: 10rem;
+  }
+
+  .textMedium {
+    font-size: 10rem;
+    width: 100%;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

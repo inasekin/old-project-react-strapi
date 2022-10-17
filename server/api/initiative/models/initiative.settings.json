@@ -1,0 +1,186 @@
+{
+  "kind": "collectionType",
+  "collectionName": "initiatives",
+  "info": {
+    "name": "initiative",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slider_images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "videoId": {
+      "type": "string"
+    },
+    "problem_short": {
+      "type": "richtext"
+    },
+    "problem_more": {
+      "type": "richtext"
+    },
+    "steps": {
+      "type": "json"
+    },
+    "proposal": {
+      "type": "string"
+    },
+    "supported_by": {
+      "type": "component",
+      "repeatable": true,
+      "component": "supported-by.supported-by"
+    },
+    "documents": {
+      "type": "component",
+      "repeatable": false,
+      "component": "documents.documents"
+    },
+    "companies": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "partners_number": {
+      "type": "string"
+    },
+    "problem_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "card_background": {
+      "type": "string"
+    },
+    "videoBackground": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "readyToShow": {
+      "type": "boolean",
+      "default": true
+    },
+    "solution_short_sections": {
+      "type": "json"
+    },
+    "solution_more": {
+      "type": "component",
+      "repeatable": false,
+      "component": "lon-solution.long-solution"
+    },
+    "foreign_experience": {
+      "type": "component",
+      "repeatable": false,
+      "component": "foreign-experience.foreign-experience"
+    },
+    "solutions_released": {
+      "type": "string"
+    },
+    "approved": {
+      "type": "boolean",
+      "default": false
+    },
+    "infographics": {
+      "type": "component",
+      "repeatable": false,
+      "component": "infigraphics.infigraphics"
+    },
+    "documents_header": {
+      "type": "string"
+    },
+    "start_number_of_supporting": {
+      "type": "integer",
+      "default": 0
+    },
+    "users": {
+      "via": "initiatives",
+      "collection": "supporting"
+    },
+    "card_description": {
+      "type": "text"
+    },
+    "position_in_list": {
+      "type": "integer"
+    },
+    "bubble_text": {
+      "type": "string"
+    },
+    "solution_without_sections": {
+      "type": "richtext"
+    },
+    "showOnMain": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "bubbleColor": {
+      "type": "enumeration",
+      "enum": [
+        "dark",
+        "violet",
+        "orange",
+        "blue"
+      ]
+    },
+    "orderOnMain": {
+      "type": "integer"
+    },
+    "videoText": {
+      "type": "string"
+    }
+  }
+}

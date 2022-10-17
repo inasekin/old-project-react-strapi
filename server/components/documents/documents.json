@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_documents_documents",
+  "info": {
+    "name": "documents",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "document": {
+      "type": "component",
+      "repeatable": true,
+      "component": "document.document"
+    }
+  }
+}

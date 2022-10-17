@@ -1,0 +1,107 @@
+@import "../../styles/rtc";
+
+.wrapper {
+  background-color: #1E2A46;
+}
+
+.hashtag {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 6.4rem;
+  color: #ffff;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #61A0FA;
+  border-radius: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  margin: 0 1rem 1rem 0;
+  font-size: 2.2rem;
+  padding: 1rem 2rem;
+  width: 9.5rem;
+  height: 3.8rem;
+  text-transform: uppercase;
+}
+
+.link {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  text-decoration: underline;
+  margin: 0 1rem 1rem 1rem;
+  font-size: 2rem;
+
+  &:hover {
+    color: #1e70bf;
+  }
+}
+
+.linkTag {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .hashtag {
+    font-size: 10rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .tag {
+    padding: 5rem 7rem;
+    border-radius: 25rem;
+    font-size: 10rem;
+  }
+
+  .link {
+    margin-left: 5rem;
+    font-size: 9rem;
+  }
+
+  .linkContainer {
+    margin-bottom: 6rem;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+  .tag {
+    padding: 7rem 15rem;
+  }
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

@@ -1,0 +1,44 @@
+@import "../../styles/rtc";
+
+.icon {
+  transition: transform .4s;
+  margin-top: 3.8rem;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .icon {
+    margin: 1rem 0 2rem 0;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

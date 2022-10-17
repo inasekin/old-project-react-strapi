@@ -1,0 +1,398 @@
+@import "../../styles/rtc";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100rem;
+  margin: 10rem 0 2rem 0;
+}
+
+.header {
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+
+#link {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #61A0FA;
+  margin: 0 0 1rem 0;
+  transition: transform 400ms;
+}
+
+#link:hover {
+  transform: scale(1.2);
+  color: #0c2241;
+}
+
+.cardContainer {
+  height: 60rem;
+  width: 80rem;
+  margin: 0 auto;
+}
+
+.initiativeCardTopLeft {
+  width: 55rem;
+  height: 30rem;
+  position: relative;
+  z-index: 1;
+  transition: transform 800ms;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  top: 1.2rem;
+  left: 4rem;
+  border-radius: 2rem;
+  padding: 4rem;
+}
+
+div.initiativeCardTopLeft > .initiativeImage {
+  visibility: hidden;
+}
+
+div.initiativeCardTopLeft:hover > .initiativeImage {
+  visibility: visible;
+}
+
+div.initiativeCardTopLeft > .initiativeVerticalName {
+  visibility: visible;
+}
+
+div.initiativeCardTopLeft:hover > .initiativeVerticalName {
+  visibility: hidden;
+}
+
+.initiativeCardTopLeft:hover {
+  z-index: 5;
+  transform: scale(1.1);
+}
+
+.initiativeCardSecond {
+  width: 55rem;
+  height: 30rem;
+  position: relative;
+  z-index: 2;
+  transition: transform 800ms;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  top: -21rem;
+  left: 10rem;
+  border-radius: 2rem;
+  padding: 4rem;
+}
+
+div.initiativeCardSecond > .initiativeImage {
+  visibility: hidden;
+}
+
+div.initiativeCardSecond:hover > .initiativeImage {
+  visibility: visible;
+}
+
+div.initiativeCardSecond > .initiativeVerticalName {
+  visibility: visible;
+}
+
+div.initiativeCardSecond:hover > .initiativeVerticalName {
+  visibility: hidden;
+}
+
+.initiativeCardSecond:hover {
+  z-index: 5;
+  transform: scale(1.1);
+}
+
+.initiativeCardThird {
+  width: 55rem;
+  height: 30rem;
+  position: relative;
+  z-index: 3;
+  transition: transform 800ms;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  top: -42.2rem;
+  left: 16rem;
+  border-radius: 2rem;
+  padding: 4rem;
+}
+
+div.initiativeCardThird > .initiativeImage {
+  visibility: hidden;
+}
+
+div.initiativeCardThird:hover > .initiativeImage {
+  visibility: visible;
+}
+
+div.initiativeCardThird > .initiativeVerticalName {
+  visibility: visible;
+}
+
+div.initiativeCardThird:hover > .initiativeVerticalName {
+  visibility: hidden;
+}
+
+.initiativeCardThird:hover {
+  z-index: 5;
+  transform: scale(1.1);
+}
+
+.initiativeCardRightBottom {
+  width: 55rem;
+  height: 30rem;
+  position: relative;
+  z-index: 4;
+  transition: transform 800ms;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  top: -63.7rem;
+  left: 22rem;
+  border-radius: 2rem;
+  padding: 4rem;
+}
+
+.initiativeCardRightBottom:hover {
+  z-index: 5;
+  transform: scale(1.1);
+}
+
+.initiativeName {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin: -1rem 1rem 3rem 25rem;
+}
+
+.initiativeDescription {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 3rem 1rem 4rem 25rem;
+}
+
+.initiativeDeveloping {
+  font-family: 'Montserrat', sans-serif;
+  color: #2b4c79;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: -2rem 1rem 4rem 25rem;
+}
+
+.supportButton {
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  position: absolute;
+
+  right: 12%;
+  bottom: 5%;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 25rem;
+  border: 0.2rem solid #ffff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.initiativeImage {
+  width: 47%;
+  position: absolute;
+  right: 52%;
+  bottom: 5%;
+}
+
+.initiativeCardTopLeftThree {
+  width: 55rem;
+  height: 30rem;
+  position: relative;
+  z-index: 1;
+  transition: transform 800ms;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  top: 3%;
+  left: 15%;
+  border-radius: 2rem;
+  padding: 4rem;
+}
+
+div.initiativeCardTopLeftThree > .initiativeImage {
+  visibility: hidden;
+}
+
+div.initiativeCardTopLeftThree:hover > .initiativeImage {
+  visibility: visible;
+}
+
+div.initiativeCardTopLeftThree > .initiativeVerticalName {
+  visibility: visible;
+}
+
+div.initiativeCardTopLeftThree:hover > .initiativeVerticalName {
+  visibility: hidden;
+}
+
+.initiativeCardTopLeftThree:hover {
+  z-index: 5;
+  transform: scale(1.1);
+}
+
+.initiativeCardSecondThree {
+  width: 55rem;
+  height: 30rem;
+  position: relative;
+  z-index: 2;
+  transition: transform 800ms;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  top: -35%;
+  left: 23%;
+  border-radius: 2rem;
+  padding: 4rem;
+}
+
+div.initiativeCardSecondThree > .initiativeImage {
+  visibility: hidden;
+}
+
+div.initiativeCardSecondThree:hover > .initiativeImage {
+  visibility: visible;
+}
+
+div.initiativeCardSecondThree > .initiativeVerticalName {
+  visibility: visible;
+}
+
+div.initiativeCardSecondThree:hover > .initiativeVerticalName {
+  visibility: hidden;
+}
+
+.initiativeCardSecondThree:hover {
+  z-index: 5;
+  transform: scale(1.1);
+}
+
+.initiativeCardThirdThree {
+  width: 55rem;
+  height: 30rem;
+  position: relative;
+  z-index: 3;
+  transition: transform 800ms;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  top: -70%;
+  left: 31%;
+  border-radius: 2rem;
+  padding: 4rem;
+}
+
+
+div.initiativeCardThirdThree > .initiativeVerticalName {
+  visibility: visible;
+}
+
+div.initiativeCardThirdThree:hover > .initiativeVerticalName {
+  visibility: hidden;
+}
+
+.initiativeCardThirdThree:hover {
+  z-index: 5;
+  transform: scale(1.1);
+}
+
+#disabled {
+  pointer-events: none;
+}
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .initiativeImage {
+    position: relative;
+    width: 50%;
+    right: initial;
+    bottom: initial;
+  }
+
+  .swiperWrapper {
+    width: 80%;
+  }
+
+  .initiativeName {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 10rem;
+    margin-left: 0;
+  }
+
+  .initiativeDescription {
+    font-size: 6rem;
+    margin: 0;
+  }
+
+  .card {
+    padding: 5rem 5rem 5rem 10rem;
+    border-radius: 5rem;
+  }
+
+  .supportButton {
+    width: initial;
+    height: initial;
+    position: relative;
+    right: initial;
+    bottom: initial;
+    margin-top: 5rem;
+    font-size: 7rem;
+    padding: 4rem;
+    border-radius: 10rem;
+  }
+
+  .header {
+    font-size: 11rem;
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+  }
+
+  #link {
+    display: block;
+    margin-top: 5rem;
+    font-size: 6rem;
+  }
+
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

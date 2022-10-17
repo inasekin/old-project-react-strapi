@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_project_card_author_page_project_card_author_pages",
+  "info": {
+    "name": "project_card_author_page",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "text"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

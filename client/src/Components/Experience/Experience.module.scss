@@ -1,0 +1,132 @@
+@import "../../styles/rtc";
+
+.wrapper {
+  background-color: #1E2A46;
+}
+
+.container {
+  background-color: #1E2A46;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.6rem;
+  color: #fff;
+}
+
+.flag {
+  width: 8.6rem;
+  height: 8.6rem;
+  margin-left: 3rem;
+}
+
+.country {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+
+
+  .countryName {
+    font-size: 4.5rem;
+    font-weight: 700;
+  }
+
+  .text {
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
+
+  margin-top: 10rem;
+}
+
+
+.experience {
+  width: 40rem;
+}
+
+.flagUpper {
+  min-width: 5rem;
+  min-height: 5rem;
+  max-width: 5rem;
+  max-height: 5rem;
+  margin: 1rem 2rem -5rem 0;
+  padding: 0;
+}
+
+
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .title {
+    font-size: 10rem;
+  }
+
+  .text {
+    font-size: 7rem;
+  }
+
+  .flag {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .country {
+    overflow: scroll;
+    .countryName {
+      font-size: 10rem;
+    }
+
+    .text {
+      text-overflow: ellipsis;
+      white-space: break-spaces;
+      width: 100%;
+      margin-left: 10rem;
+      font-size: 6rem;
+    }
+
+    margin-top: 15rem;
+  }
+
+  .flagUpper {
+    min-width: 50rem;
+    min-height: 50rem;
+    max-width: 50rem;
+    max-height: 50rem;
+    margin: 10rem 2rem 10rem 0;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

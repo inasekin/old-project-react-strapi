@@ -1,0 +1,132 @@
+@import "../../styles/rtc";
+
+.container {
+  font-family: 'Montserrat', sans-serif;
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 80rem;
+}
+
+.upperRow {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 5rem 0;
+}
+
+.leftColumn {
+  width: 40rem;
+  margin: 0 5rem 0 0;
+}
+
+.lowerRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  transition: transform 400ms;
+  border-radius: 24px;
+}
+
+.years {
+  font-family: 'Montserrat', sans-serif;
+  color: #5287FF;
+  font-weight: 600;
+  font-size: 9.6rem;
+  margin: 5rem 0 2rem 0;
+}
+
+.achievements {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 0 0 10rem 0;
+}
+
+.about {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  width: 50rem;
+  margin: 5rem 0 3rem 0;
+}
+
+.name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 9.6rem;
+  line-height: 110.19%;
+}
+
+.position {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 3.6rem;
+  margin: -1rem 0 0 0;
+}
+
+.fact {
+  margin: 0 8rem 0 0;
+}
+
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .avatarMob {
+    border-radius: 25rem;
+    max-width: 100% !important;
+  }
+
+  .name {
+    font-size: 16.6rem;
+  }
+
+  .about {
+    margin-top: 10rem;
+    width: 100%;
+    font-size: 7rem;
+  }
+
+  .position {
+    font-size: 7.6rem;
+    margin: 0 0 10rem 0;
+  }
+
+  .years {
+    font-size: 16.6rem;
+  }
+
+  .achievements {
+    font-size: 7rem;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

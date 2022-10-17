@@ -1,0 +1,88 @@
+@import "../../styles/rtc";
+
+
+.wrapper {
+  background-color: #1E2A46;
+  border-radius: 0 0 17% 17%;
+}
+
+.container {
+  background-color: #1E2A46;
+  border-radius: 0% 0% 20% 20%;
+}
+
+.pre {
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.title {
+  color: #ffff;
+  font-size: 6.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 67rem;
+}
+
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .title {
+    font-size: 10rem;
+  }
+
+  .pre {
+    font-size: 7rem;
+    margin-bottom: 10rem;
+  }
+
+  .accordion {
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+    width: 100%;
+  }
+
+  .wrapper {
+    border-radius: 0;
+  }
+
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

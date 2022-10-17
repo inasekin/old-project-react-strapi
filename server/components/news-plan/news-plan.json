@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_news_plan_news_plans",
+  "info": {
+    "name": "news_plan",
+    "icon": "anchor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "plan_text": {
+      "type": "richtext"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "icon_text": {
+      "type": "string"
+    }
+  }
+}

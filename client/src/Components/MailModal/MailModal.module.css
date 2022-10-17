@@ -1,0 +1,15 @@
+#modal {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 2rem;
+}
+
+#contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content {
+  font-size: 2rem;
+  margin: 0 1rem 0 1rem;
+}

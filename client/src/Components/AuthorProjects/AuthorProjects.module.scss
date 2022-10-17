@@ -1,0 +1,120 @@
+@import "../../styles/rtc";
+
+.card {
+  background-color: #FBFAFA;
+  border-radius: 2rem;
+  padding: 3rem;
+  transition: transform 400ms;
+  height: 40rem;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80rem;
+}
+
+.icon {
+  width: 10rem;
+  margin: 0 0 4rem 0;
+}
+
+.iconContainer {
+  background-color: transparent;
+  height: 13rem;
+}
+
+.header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+
+.info {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 50rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.projectCardLinked {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+}
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .text {
+    font-size: 8rem;
+    display: block;
+    width: 100%;
+  }
+
+  .header {
+    font-size: 21.4rem;
+    margin-top: 15rem;
+  }
+
+  .card {
+    margin-bottom: 10rem;
+    padding: 10rem;
+  }
+
+  .info {
+    font-size: 8rem;
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+
+  .icon {
+    width: 50%;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+  .iconContainer {
+    height: fit-content;
+  }
+
+  .card {
+    height: unset;
+  }
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+
+}
+
+
+@media print {
+}

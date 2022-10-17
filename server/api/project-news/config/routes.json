@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/project-news",
+      "handler": "project-news.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/project-news/count",
+      "handler": "project-news.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/project-news/:id",
+      "handler": "project-news.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/project-news",
+      "handler": "project-news.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/project-news/:id",
+      "handler": "project-news.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/project-news/:id",
+      "handler": "project-news.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

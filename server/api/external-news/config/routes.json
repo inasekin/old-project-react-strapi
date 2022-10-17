@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/external-news",
+      "handler": "external-news.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/external-news/count",
+      "handler": "external-news.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/external-news/:id",
+      "handler": "external-news.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/external-news",
+      "handler": "external-news.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/external-news/:id",
+      "handler": "external-news.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/external-news/:id",
+      "handler": "external-news.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

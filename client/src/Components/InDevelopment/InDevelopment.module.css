@@ -1,0 +1,458 @@
+@media only screen and (min-device-width: 1000px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    margin: 0 0 0 3rem;
+  }
+
+  .text {
+    font-size: 6rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    width: 80rem;
+  }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 0 0 3rem;
+    }
+  
+    .text {
+      font-size: 6rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      width: 80rem;
+    }
+}
+
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    margin: 0 0 0 2rem;
+  }
+
+  .text {
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    margin: 0 0 0 2rem;
+  }
+
+  .text {
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+  }
+}
+
+/* Iphone 4 & 4s */
+@media only screen 
+  and (device-width: 320px) 
+  and (device-height: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 0 0 2rem;
+    }
+  
+    .text {
+      font-size: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+    }
+}
+
+
+/* iPhone 5, 5S, 5C and 5SE */
+
+@media only screen 
+  and (device-width: 320px) 
+  and (device-height: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 0 0 2rem;
+    }
+  
+    .text {
+      font-size: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+    }
+}
+
+/* iPhone 6, 6S, 7 and 8 */
+
+@media only screen 
+  and (device-width: 375px) 
+  and (device-height: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 0 0 2rem;
+    }
+  
+    .text {
+      font-size: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+    }
+}
+
+/* iPhone 6+, 7+ and 8+ */
+
+@media only screen 
+  and (device-width: 414px) 
+  and (device-height: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 0 0 2rem;
+    }
+  
+    .text {
+      font-size: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+    }
+}
+
+/* iPhone X */
+
+@media only screen 
+  and (device-width: 375px) 
+  and (device-height: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 0 0 2rem;
+    }
+  
+    .text {
+      font-size: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+    }
+}
+
+/* Galaxy S3 */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 0 0 2rem;
+    }
+  
+    .text {
+      font-size: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+    }
+}
+
+/* Galaxy S4, S5 and Note 3  */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 0 0 2rem;
+    }
+  
+    .text {
+      font-size: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+    }
+}
+
+/* Galaxy S6 */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 0 0 2rem;
+    }
+  
+    .text {
+      font-size: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+    }
+}
+
+/* Galaxy S21 */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 800px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 0 0 2rem;
+    }
+  
+    .text {
+      font-size: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+    }
+}
+
+/* Galaxy S21 ultra */
+@media screen 
+  and (device-width: 384px) 
+  and (device-height: 854px) 
+  and (-webkit-device-pixel-ratio: 4) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 0 0 2rem;
+    }
+  
+    .text {
+      font-size: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+    }
+}
+
+/* Nexus 4 */ 
+
+@media screen 
+  and (device-width: 384px) 
+  and (device-height: 592px) 
+  and (-webkit-device-pixel-ratio: 2) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 0 0 2rem;
+    }
+  
+    .text {
+      font-size: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+    }
+}
+
+/* Nexus 5 */ 
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 592px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 0 0 2rem;
+    }
+  
+    .text {
+      font-size: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+    }
+}
+
+/* Nexus 6 and 6P */ 
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 592px) 
+  and (-webkit-device-pixel-ratio: 4) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 0 0 2rem;
+    }
+  
+    .text {
+      font-size: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+    }
+}
+
+/* Windows Phone */ 
+
+@media screen 
+  and (device-width: 480px) 
+  and (device-height: 800px) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 0 0 2rem;
+    }
+  
+    .text {
+      font-size: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+    }
+}
+
+@media screen 
+  and (device-width: 393px) 
+  and (device-height: 851px)
+  and (-webkit-device-pixel-ratio: 3) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 50vh;
+      margin: 0 0 0 2rem;
+    }
+  
+    .text {
+      font-size: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+    }
+}
+
+/* IPhone 11 */ 
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) {
+
+}
+
+
+/* IPhone 12 / 12pro */ 
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* IPhone 12 mini */ 
+
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* IPhone XR */ 
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) {
+
+    }     
+/* IPhone XS Max */ 
+
+@media only screen 
+and (device-width : 414px) 
+and (device-height : 896px) 
+and (-webkit-device-pixel-ratio : 3) {
+
+}
+
+/* Redmi 9 */ 
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 780px)
+  and (-webkit-device-pixel-ratio: 2.75) {
+
+}
+
+/* Redmi 9 */ 
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 800px)
+  and (-webkit-device-pixel-ratio: 2.8) {
+
+}

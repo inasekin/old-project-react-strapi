@@ -1,0 +1,1996 @@
+@media only screen and (min-device-width: 1000px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem 0 5rem 0;
+    width: 80rem;
+  }
+
+  .videoContainer {
+    display: flex;
+    flex-direction: row;
+    width: 75rem;
+    height: 35rem;
+    background: #61A0FA;
+    border-radius: 24px;
+    border: 2px solid #FFFFFF;
+  }
+
+  .videoBox {
+    position: relative;
+    top: 3.5rem;
+    left: 3rem;
+    width: 80rem;
+    height: 80rem;
+  }
+
+  .textBox {
+    position: relative;
+    top: 8rem;
+    left: -10rem;
+    width: 40rem;
+    height: 30rem;
+  }
+
+  .actual {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    color: white;
+  }
+
+  .video {
+    border-radius: 50%;
+    width: 28rem;
+    height: 28rem;
+    border: none;
+  }
+
+  .videoText {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 25rem;
+    letter-spacing: 0.09rem;
+    margin: 4rem 0 0 0;
+  }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+    }
+  
+    .container {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      padding: 2rem 0 5rem 0;
+      width: 80rem;
+    }
+  
+    .videoContainer {
+      display: flex;
+      flex-direction: row;
+      width: 75rem;
+      height: 35rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #FFFFFF;
+    }
+  
+    .videoBox {
+      position: relative;
+      top: 3.5rem;
+      left: 3rem;
+      width: 80rem;
+      height: 80rem;
+    }
+  
+    .textBox {
+      position: relative;
+      top: 8rem;
+      left: -10rem;
+      width: 40rem;
+      height: 30rem;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 4rem;
+      letter-spacing: 0.2rem;
+      color: white;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 28rem;
+      height: 28rem;
+      border: none;
+    }
+  
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 500;
+      font-size: 1rem;
+      width: 25rem;
+      letter-spacing: 0.09rem;
+      margin: 4rem 0 0 0;
+    }
+}
+
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    margin: 2rem 0 0 0;
+  }
+  
+  .videoContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 24rem;
+    height: 44rem;
+    background: #61A0FA;
+    border-radius: 24px;
+    border: 2px solid #ffff;
+  }
+
+  .videoBox {
+    width: 30rem;
+    margin: 2rem 0 2rem 0;
+  }
+
+  .actual {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: white;
+  }
+
+  .videoButton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+    border-radius: 159px;
+    border: 2px solid #FFFFFF;
+    width: 10rem;
+    height: 4rem;
+    cursor: pointer;
+  }
+
+  .videoImagePlay {
+    width: 2rem;
+  }
+
+  .video {
+    border-radius: 50%;
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .videoText {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 17rem;
+    letter-spacing: 0.09rem;
+    margin: 0 0 1rem 0;
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    margin: 2rem 0 0 0;
+  }
+  
+  .videoContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 24rem;
+    height: 44rem;
+    background: #61A0FA;
+    border-radius: 24px;
+    border: 2px solid #ffff;
+  }
+
+  .videoBox {
+    width: 30rem;
+    margin: 2rem 0 2rem 0;
+  }
+
+  .actual {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: white;
+  }
+
+  .videoButton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+    border-radius: 159px;
+    border: 2px solid #FFFFFF;
+    width: 10rem;
+    height: 4rem;
+    cursor: pointer;
+  }
+
+  .videoImagePlay {
+    width: 2rem;
+  }
+
+  .video {
+    border-radius: 50%;
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .videoText {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 17rem;
+    letter-spacing: 0.09rem;
+    margin: 0 0 1rem 0;
+  }
+}
+
+/* Iphone 4 & 4s */
+@media only screen 
+  and (device-width: 320px) 
+  and (device-height: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+
+/* iPhone 5, 5S, 5C and 5SE */
+
+@media only screen 
+  and (device-width: 320px) 
+  and (device-height: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+/* iPhone 6, 6S, 7 and 8 */
+
+@media only screen 
+  and (device-width: 375px) 
+  and (device-height: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+/* iPhone 6+, 7+ and 8+ */
+
+@media only screen 
+  and (device-width: 414px) 
+  and (device-height: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+
+/* iPhone X */
+
+@media only screen 
+  and (device-width: 375px) 
+  and (device-height: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+/* Galaxy S3 */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+/* Galaxy S4, S5 and Note 3  */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+/* Galaxy S6 */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+/* Galaxy S21 */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 800px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+/* Galaxy S21 ultra */
+@media screen 
+  and (device-width: 384px) 
+  and (device-height: 854px) 
+  and (-webkit-device-pixel-ratio: 4) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+/* Nexus 4 */ 
+
+@media screen 
+  and (device-width: 384px) 
+  and (device-height: 592px) 
+  and (-webkit-device-pixel-ratio: 2) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+/* Nexus 5 */ 
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 592px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+/* Nexus 6 and 6P */ 
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 592px) 
+  and (-webkit-device-pixel-ratio: 4) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+/* Windows Phone */ 
+
+@media screen 
+  and (device-width: 480px) 
+  and (device-height: 800px) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+@media screen 
+  and (device-width: 393px) 
+  and (device-height: 851px)
+  and (-webkit-device-pixel-ratio: 3) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+/* IPhone 11 */ 
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) {
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        margin: 2rem 0 0 0;
+      }
+      
+      .videoContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        width: 24rem;
+        height: 44rem;
+        background: #61A0FA;
+        border-radius: 24px;
+        border: 2px solid #ffff;
+      }
+    
+      .videoBox {
+        width: 30rem;
+        margin: 2rem 0 2rem 0;
+      }
+    
+      .actual {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        color: white;
+      }
+    
+      .videoButton {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: transparent;
+        border-radius: 159px;
+        border: 2px solid #FFFFFF;
+        width: 10rem;
+        height: 4rem;
+        cursor: pointer;
+      }
+    
+      .videoImagePlay {
+        width: 2rem;
+      }
+    
+      .video {
+        border-radius: 50%;
+        width: 17rem;
+        height: 17rem;
+      }
+  
+      .videoText {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-weight: 400;
+        font-size: 1rem;
+        width: 17rem;
+        letter-spacing: 0.09rem;
+        margin: 0 0 1rem 0;
+      }
+}
+
+
+/* IPhone 12 / 12pro */ 
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        margin: 2rem 0 0 0;
+      }
+      
+      .videoContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        width: 24rem;
+        height: 44rem;
+        background: #61A0FA;
+        border-radius: 24px;
+        border: 2px solid #ffff;
+      }
+    
+      .videoBox {
+        width: 30rem;
+        margin: 2rem 0 2rem 0;
+      }
+    
+      .actual {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        color: white;
+      }
+    
+      .videoButton {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: transparent;
+        border-radius: 159px;
+        border: 2px solid #FFFFFF;
+        width: 10rem;
+        height: 4rem;
+        cursor: pointer;
+      }
+    
+      .videoImagePlay {
+        width: 2rem;
+      }
+    
+      .video {
+        border-radius: 50%;
+        width: 17rem;
+        height: 17rem;
+      }
+  
+      .videoText {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-weight: 400;
+        font-size: 1rem;
+        width: 17rem;
+        letter-spacing: 0.09rem;
+        margin: 0 0 1rem 0;
+      }
+}
+
+/* IPhone 12 mini */ 
+
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) {
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        margin: 2rem 0 0 0;
+      }
+      
+      .videoContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        width: 24rem;
+        height: 44rem;
+        background: #61A0FA;
+        border-radius: 24px;
+        border: 2px solid #ffff;
+      }
+    
+      .videoBox {
+        width: 30rem;
+        margin: 2rem 0 2rem 0;
+      }
+    
+      .actual {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        color: white;
+      }
+    
+      .videoButton {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: transparent;
+        border-radius: 159px;
+        border: 2px solid #FFFFFF;
+        width: 10rem;
+        height: 4rem;
+        cursor: pointer;
+      }
+    
+      .videoImagePlay {
+        width: 2rem;
+      }
+    
+      .video {
+        border-radius: 50%;
+        width: 17rem;
+        height: 17rem;
+      }
+  
+      .videoText {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-weight: 400;
+        font-size: 1rem;
+        width: 17rem;
+        letter-spacing: 0.09rem;
+        margin: 0 0 1rem 0;
+      }
+}
+
+/* IPhone XR */ 
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) {
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        margin: 2rem 0 0 0;
+      }
+      
+      .videoContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        width: 24rem;
+        height: 44rem;
+        background: #61A0FA;
+        border-radius: 24px;
+        border: 2px solid #ffff;
+      }
+    
+      .videoBox {
+        width: 30rem;
+        margin: 2rem 0 2rem 0;
+      }
+    
+      .actual {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        color: white;
+      }
+    
+      .videoButton {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: transparent;
+        border-radius: 159px;
+        border: 2px solid #FFFFFF;
+        width: 10rem;
+        height: 4rem;
+        cursor: pointer;
+      }
+    
+      .videoImagePlay {
+        width: 2rem;
+      }
+    
+      .video {
+        border-radius: 50%;
+        width: 17rem;
+        height: 17rem;
+      }
+  
+      .videoText {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-weight: 400;
+        font-size: 1rem;
+        width: 17rem;
+        letter-spacing: 0.09rem;
+        margin: 0 0 1rem 0;
+      }
+    }     
+/* IPhone XS Max */ 
+
+@media only screen 
+and (device-width : 414px) 
+and (device-height : 896px) 
+and (-webkit-device-pixel-ratio : 3) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    margin: 2rem 0 0 0;
+  }
+  
+  .videoContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 24rem;
+    height: 44rem;
+    background: #61A0FA;
+    border-radius: 24px;
+    border: 2px solid #ffff;
+  }
+
+  .videoBox {
+    width: 30rem;
+    margin: 2rem 0 2rem 0;
+  }
+
+  .actual {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: white;
+  }
+
+  .videoButton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+    border-radius: 159px;
+    border: 2px solid #FFFFFF;
+    width: 10rem;
+    height: 4rem;
+    cursor: pointer;
+  }
+
+  .videoImagePlay {
+    width: 2rem;
+  }
+
+  .video {
+    border-radius: 50%;
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .videoText {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 17rem;
+    letter-spacing: 0.09rem;
+    margin: 0 0 1rem 0;
+  }
+}
+
+/* Redmi 9 */ 
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 780px)
+  and (-webkit-device-pixel-ratio: 2.75) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+  
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+/* Redmi 9 */ 
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 800px)
+  and (-webkit-device-pixel-ratio: 2.8) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      margin: 2rem 0 0 0;
+    }
+    
+    .videoContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      width: 24rem;
+      height: 44rem;
+      background: #61A0FA;
+      border-radius: 24px;
+      border: 2px solid #ffff;
+    }
+  
+    .videoBox {
+      width: 30rem;
+      margin: 2rem 0 2rem 0;
+    }
+  
+    .actual {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      color: white;
+    }
+  
+    .videoButton {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: transparent;
+      border-radius: 159px;
+      border: 2px solid #FFFFFF;
+      width: 10rem;
+      height: 4rem;
+      cursor: pointer;
+    }
+  
+    .videoImagePlay {
+      width: 2rem;
+    }
+  
+    .video {
+      border-radius: 50%;
+      width: 17rem;
+      height: 17rem;
+    }
+  
+    .videoText {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 17rem;
+      letter-spacing: 0.09rem;
+      margin: 0 0 1rem 0;
+    }
+}

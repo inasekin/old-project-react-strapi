@@ -1,0 +1,67 @@
+@import "../../styles/rtc";
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactsContainer {
+  background-color: #FBFAFA;
+  border-radius: 24px;
+  padding: 5rem 5rem 5rem 4rem;
+  cursor: default;
+}
+
+.header {
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1.5rem 0 0 0;
+}
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .header {
+    margin-top: 15rem;
+    font-size: 10rem;
+  }
+
+  .text {
+    font-size: 6rem;
+    margin-bottom: 10rem;
+  }
+
+  .contactsContainer {
+    padding: 10rem 10rem 10rem 10rem;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

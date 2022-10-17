@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_lon_solution_long_solutions",
+  "info": {
+    "name": "long_solution",
+    "icon": "angle-double-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "header_one": {
+      "type": "string"
+    },
+    "solution_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "header_second": {
+      "type": "string"
+    },
+    "text_first": {
+      "type": "richtext"
+    },
+    "text_second": {
+      "type": "richtext"
+    },
+    "text_third": {
+      "type": "richtext"
+    }
+  }
+}

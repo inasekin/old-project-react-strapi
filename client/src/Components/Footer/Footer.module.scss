@@ -1,0 +1,96 @@
+@import "../../styles/rtc";
+
+.wrapper {
+  background-color: #1E2A46;
+  padding: 12rem 3rem;
+  margin: 0;
+}
+
+#link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: white;
+  margin: 0 0 2.5rem 5rem;
+
+  transition: transform 400ms;
+}
+
+#link:hover {
+  transform: scale(1.2);
+}
+
+#link:hover {
+  color: #61A0FA;
+}
+
+.mobileUpper {
+  display: flex;
+  flex-direction: row;
+  width: 80rem;
+}
+
+.logo {
+  margin-left: 20rem;
+}
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+  .logo {
+    margin-left: 7rem;
+  }
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .wrapper {
+    padding: 20rem 7rem;
+  }
+
+  .contactNameDark {
+    font-size: 7rem;
+  }
+
+  .contactMail {
+    font-size: 9rem;
+  }
+
+  #link {
+    font-size: 7rem;
+    margin-bottom: 10rem;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+  .logo {
+    max-width: 135px;
+  }
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}

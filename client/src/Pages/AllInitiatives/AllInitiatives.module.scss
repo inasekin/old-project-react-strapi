@@ -1,0 +1,61 @@
+@import "../../styles/rtc";
+
+.top {
+  width: 80rem;
+  margin: 2rem 0 8rem 0;
+}
+
+.header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 6.4rem;
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  width: 45rem;
+}
+
+
+
+// МОДИФИКАТОРЫ
+
+// < 1440px
+@media (max-width: map-get($grid-breakpoints, xx)-1) {
+}
+
+
+// < 1200px
+@media (max-width: map-get($grid-breakpoints, xl)-1) {
+}
+
+
+// < 992px
+@media (max-width: map-get($grid-breakpoints, lg)-1) {
+  .header {
+    font-size: 14.4rem;
+    width: 100%;
+  }
+
+  .text {
+    font-size: 15px;
+    width: 100%;
+    margin: 8rem 0;
+  }
+}
+
+
+// < 768px
+@media (max-width: map-get($grid-breakpoints, md)-1) {
+}
+
+
+// < 576px
+@media (max-width: map-get($grid-breakpoints, sm)-1) {
+}
+
+
+@media print {
+}
